@@ -386,7 +386,7 @@ function App() {
 // Let's refactor the `onClick` handler into a separate function.
 
 // Steps:
-// 1. Place your cursor at the start of the line with `<button>`.
+// 1. Place your cursor inside the `<button>` `onClick` handler function.
 // 2. Press `ci{` (change inside curly braces) to delete the content inside `{}` and enter insert mode.
 //    - This will cut the content and save it to the clipboard.
 // 4. Type `handleClick` and press `Esc`.
