@@ -124,15 +124,15 @@ keys together to make something that feels like a cheat code. For example,
 let’s inspect the `ciw` command. There are three parts:
 
 1. Action: `c` (change)
-2. Modifier: `i` (in)
+2. Motion: `i` (in)
 3. Object: `w` (word)
 
 It’s helpful to read this like a sentence — “change in word”. There are multiple
-actions, modifiers, and objects. For example, what if we changed the object from
+actions, motions, and objects. For example, what if we changed the object from
 a word to a paragraph? `cip` or “change in paragraph”. Let’s inspect another command:
 
 1. Action: `v` (select)
-2. Modifier: `a` (around)
+2. Motion: `a` (around)
 3. Object: `b` (brackets)
 
 For more examples, see the cheat sheet in the README.
