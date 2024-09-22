@@ -161,21 +161,20 @@ in the repo README as you make your way through the course.
 // Steps:
 // 1. Place your cursor below the TODO line.
 // 2. Press `i` to enter insert mode.
-// 3. Type `function App() {` and press `Enter`.
-// 4. Type `}` and press `Esc` to exit insert mode.
+// 3. Type `function App() { }`.
+// 4. Press `Esc` to exit insert mode.
 // Note: At the end of the course, we'll recommend plugins to
 // automatically close tags and brackets for you.
 
 // TODO: Create a simple functional component called `App`.
 
 // Expected result:
-// function App() {
-// }
+// function App() { }
 
 // Now, let's add a return statement inside the `App` function.
 
 // Steps:
-// 1. Place your cursor between the curly braces `{}`.
+// 1. Place your cursor between the curly braces `{ }`.
 // 2. Press `i` to enter insert mode.
 // 3. Type the following code:
 //    ```
@@ -188,7 +187,7 @@ in the repo README as you make your way through the course.
 
 // TODO: Inside the `App` function, add a `return` statement that returns a `<div>`.
 
-function App() {}
+function App() { }
 
 // Expected result:
 // function App() {
