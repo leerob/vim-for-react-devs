@@ -113,7 +113,7 @@ export default function Page() {
             href="/course.tsx"
             className="inline-block bg-[#7aa2f7] text-[#1a1b26] font-medium px-4 py-1 rounded hover:bg-[#2ac3de] transition-colors duration-300"
           >
-            Start Course
+            Download Course File
           </a>
         </div>
       </div>

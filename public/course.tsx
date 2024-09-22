@@ -676,13 +676,14 @@ function App() {
 // If you've made it this far, why not try to make Neovim your default editor?
 // Here are the plugins that I recommend for React and TypeScript development:
 
-// Included in the Neovim Quickstart:
+// Included in the Neovim Kickstart:
 // - Telescope (find and open files, search across your directory)
 // - nvim-autopairs (Automatically close characters like `(`, `{`, `[`, `'`, `<`, and more)
-// - neo-tree (Press `\` to toggle file system GUI, similar to VSCode)
 // - mini.ai (despite the name, not related to AI – this enables `dit`, `ciq`, and more)
 
 // Other Recommended Plugins
+// - neo-tree (Press `\` to toggle file system GUI, similar to VSCode)
+//   - This is in the Kickstart, but you need to uncomment it
 // - lazygit (easy GUI for git commnads)
 //   - macOS: brew install lazygit
 // - lazygit.nvim (open lazygit directly from Neovim with <leader>lg)
