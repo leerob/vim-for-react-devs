@@ -10,12 +10,10 @@ This mini-course is designed to help **React developers** learn **Vim** commands
 
 Before starting this course, you should have neovim installed and configured:
 
-- 1. macOS: brew install nvim fzf ripgrep
-- 2. Follow this quickstart: https://github.com/nvim-lua/kickstart.nvim
-  - Don't feel you need to understand the entire Lua file
-  - At the completion of the course, we'll talk about plugins and configuration
-  - We'll also link some additional resources if you want to learn more
-- 3. That's it! Download the [course file](./public/course.tsx) and start neovim with `nvim course.tsx`
+1. macOS: `brew install nvim fzf ripgrep`
+2. Follow [this Neovim quickstart](https://github.com/nvim-lua/kickstart.nvim)
+
+That's it! Download the [course file](./public/course.tsx) and start neovim with `nvim course.tsx`.
 
 ## Course Content
 
