@@ -25,14 +25,14 @@ Estimated time to complete the setup and course: 1 hour.
 
 NOTE: Prerequisites
 
-Before starting this course, you should have neovim installed and configured:
+Before starting this course, you should have Neovim installed and configured:
 
 - 1) macOS: brew install nvim fzf ripgrep
 - 2) Follow this quickstart: https://github.com/nvim-lua/kickstart.nvim
   - Don't feel you need to understand the entire Lua file
   - At the completion of the course, we'll talk about plugins and configuration
   - We'll also link some additional resources if you want to learn more
-- 3) That's it! Download this file and start neovim with `nvim course.tsx`
+- 3) That's it! Download this file and start Neovim with `nvim course.tsx`
 
 NOTE: Introduction to Vim
 
@@ -673,7 +673,7 @@ function App() {
 
 // NOTE: ✦ Recommended Neovim Plugins
 
-// If you've made it this far, why not try to make neovim your default editor?
+// If you've made it this far, why not try to make Neovim your default editor?
 // Here are the plugins that I recommend for React and TypeScript development:
 
 // Included in the Neovim Quickstart:
@@ -685,7 +685,7 @@ function App() {
 // Other Recommended Plugins
 // - lazygit (easy GUI for git commnads)
 //   - macOS: brew install lazygit
-// - lazygit.nvim (open lazygit directly from neovim with <leader>lg)
+// - lazygit.nvim (open lazygit directly from Neovim with <leader>lg)
 //   - <leader> defaults to `space` with Quickstart
 //   - https://github.com/kdheepak/lazygit.nvim
 // - Avante (AI-driven code suggestions, similar to Cursor)
@@ -699,6 +699,7 @@ function App() {
 //   - https://github.com/smjonas/inc-rename.nvim
 
 // Additional Learning Resources
+// - Vim Tutor (run `:Tutor` inside Neovim)
 // - Understand Quickstart: https://www.youtube.com/watch?v=m8C0Cq9Uv9o
 // - Understand Neovim Configs: https://www.youtube.com/playlist?list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn
 
