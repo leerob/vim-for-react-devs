@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "4.0.0-alpha.24",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "next": "15.0.0-canary.161",
+    "react": "19.0.0-rc-e740d4b1-20240919",
+    "react-dom": "19.0.0-rc-e740d4b1-20240919",
+    "postcss": "^8",
+    "tailwindcss": "4.0.0-alpha.24",
+    "typescript": "^5"
+  }
+}

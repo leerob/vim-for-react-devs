@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-family-mono: 'Fira Code', monospace;
+}
+
+html {
+  min-width: 360px;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
