@@ -27,12 +27,18 @@ NOTE: Prerequisites
 
 Before starting this course, you should have Neovim installed and configured:
 
-- 1) macOS: brew install nvim fzf ripgrep
+- 1) macOS: `brew install nvim fzf ripgrep`
 - 2) Follow this quickstart: https://github.com/nvim-lua/kickstart.nvim
   - Don't feel you need to understand the entire Lua file
   - At the completion of the course, we'll talk about plugins and configuration
   - We'll also link some additional resources if you want to learn more
 - 3) That's it! Download this file and start Neovim with `nvim course.tsx`
+
+I recommend using Kickstart to quickly get started with a productive Neovim setup.
+Kickstart is not a Neovim distribution (like Lazyvim) where everything is bundled.
+Instead, it's starting point for building your own config, with all of the best
+defaults in the ecosystem. Think it a Neovim distro like Create React App (CRA),
+and Kickstart like ejecting from CRA, if that helps.
 
 NOTE: Introduction to Vim
 
@@ -144,6 +150,8 @@ NOTE: Undo and Redo
 
 Okay, let's get started! Feel free to open and reference the cheat sheet
 in the repo README as you make your way through the course.
+
+Cheat sheet: https://github.com/leerob/vim-for-react-devs
 
 */
 
@@ -342,9 +350,9 @@ function App() {
 // Steps:
 // 1. Move inside the `App` function, after the opening `{`.
 // 2. Press `o` to create a new line below and enter insert mode.
-// 3. Type `const [count, setCount] = useState(0);` and press `Esc`.
+// 3. Type `const [name, setName] = useState();` and press `Esc`.
 
-// TODO: Add a state variable `count` initialized to `0`.
+// TODO: Add a new `useState` declaration for `name`.
 
 function App() {
   return (
@@ -357,19 +365,19 @@ function App() {
 }
 
 // Expected result:
-// const [count, setCount] = useState(0);
+// const [name, setName] = useState();
 
 // Let's add a `<button>` with an inline `onClick` handler.
 
 // Steps:
 // 1. Place your cursor anywhere on the last `<p>` tag line.
 // 2. Press `o` to create a new line and enter insert mode.
-// 3. Type `<button onClick={() => setCount(count + 1)}>{'Click Me'}</button>` and press `Esc`.
+// 3. Type `<button onClick={() => setName('Lee')}>{'Click Me'}</button>` and press `Esc`.
 
 // TODO: Add a `<button>` element after the last `<p>` tag.
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [name, setName] = useState();
 
   return (
     <div>
@@ -381,7 +389,7 @@ function App() {
 }
 
 // Expected result:
-// <button onClick={() => setCount(count + 1)}>{'Click Me'}</button>
+// <button onClick={() => setName('Lee')}>{'Click Me'}</button>
 
 // Let's refactor the `onClick` handler into a separate function.
 
@@ -398,28 +406,28 @@ function App() {
 // 2. Press `o` to create a new line and enter insert mode.
 // 3. Type `const handleClick = ` and press `Esc`.
 // 4. Press `p` to paste the previously cut content.
-//    - The pasted content should be `() => setCount(count + 1)`.
+//    - The pasted content should be `() => setName('Lee')`.
 
 // TODO: Replace the inline `onClick` handler with `handleClick` and define the function.
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [name, setName] = useState();
 
   return (
     <div>
       <p>Developer</p>
       <p>Welcome to the Vim course.</p>
       <p>Hello World!</p>
-      <button onClick={() => setCount(count + 1)}>{'Click Me'}</button>
+      <button onClick={() => setName('Lee')}>{'Click Me'}</button>
     </div>
   );
 }
 
 // Expected result:
 // function App() {
-//   const [count, setCount] = useState(0);
+//   const [name, setName] = useState();
 //
-//   const handleClick = () => setCount(count + 1);
+//   const handleClick = () => setName('Lee')
 //
 //   return (
 //     <div>
@@ -436,23 +444,27 @@ function App() {
 // Steps:
 // 1. Place your cursor on the `<button>` line.
 // 2. Navigate directly to a character with `f[char]`.
-// 3. For example, `fs` to go to the `s` in `setCount`.
-// 4. You could then `cw` to change just `setCount`, or even `cf)` (change until character `)`).
+// 3. For example, `fs` to go to the `s` in `setName`.
+// 4. You could then `cw` to change just `setName`, or even `cf)` (change until character `)`).
+// 5. Let's change that `onClick` to `console.log('clicked')`.
 
-// TODO: Try out `f[char]` and `cf[char]` motions to change parts of the line.
+// TODO: Try `fc` and then `cf)` motions at the start of the `<button>` line.
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [name, setName] = useState();
 
   return (
     <div>
       <p>Developer</p>
       <p>Welcome to the Vim course.</p>
       <p>Hello World!</p>
-      <button onClick={() => setCount(count + 1)}>{'Click Me'}</button>
+      <button onClick={() => setName('Lee')}>{'Click Me'}</button>
     </div>
   );
 }
+
+// Expected result:
+// <button onClick={() => console.log('clicked')}>{'Click Me'}</button>
 
 // --- End of Refactoring Lesson ---
 
@@ -465,12 +477,12 @@ function App() {
 // 2. Press `ci'` (change inside quotes) to delete the content inside the quotes and enter insert mode.
 // 3. Type `Increment` and press `Esc`.
 
-// TODO: Change the text inside the quotes of `'Click Me'` to `'Increment'`.
+// TODO: Change the text inside the quotes of `'Click Me'` to `'Update Name'`.
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [name, setName] = useState();
 
-  const handleClick = () => setCount(count + 1);
+  const handleClick = () => setName('Lee');
 
   return (
     <div>
@@ -491,29 +503,29 @@ function App() {
 // plugin, which the Neovim Quickstart sets up for us.
 
 // Steps:
-// 1. Place your cursor anywhere on the line with `{'Increment'}`.
+// 1. Place your cursor anywhere on the line with `{'Update Name'}`.
 // 2. Press `caq` to delete the string and enter insert mode.
-// 3. Type `Count: ${count}` and press `Esc`.
+// 3. Type `Name: ${name}` and press `Esc`.
 
 // TODO: Modify the button text to be a string template literal.
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [name, setName] = useState();
 
-  const handleClick = () => setCount(count + 1);
+  const handleClick = () => setName('Lee');
 
   return (
     <div>
       <p>Developer</p>
       <p>Welcome to the Vim course.</p>
       <p>Hello World!</p>
-      <button onClick={handleClick}>{'Increment'}</button>
+      <button onClick={handleClick}>{'Update Name'}</button>
     </div>
   );
 }
 
 // Expected result:
-// {`Count: ${count}`}
+// {`Name: ${name}`}
 
 // NOTE: ✦ Lesson: More Refactoring
 
@@ -632,31 +644,25 @@ function App() {
 
 // Steps:
 // 1. Press `:` to enter command mode.
-// 2. Type `:%s/count/clicks/gc` and press `Enter`.
+// 2. Type `:%s/unique/common/gc` and press `Enter`.
 // 3. Press `y` or `n` to confirm replacing found matches.
 
 // This command means:
 
 // - `%`: Apply to all lines in the file.
 // - `s`: Substitute.
-// - `count`: The search pattern.
-// - `clicks`: The replacement string.
+// - `unique`: The search pattern.
+// - `common`: The replacement string.
 // - `g`: Global (replace all occurrences in each line).
 // - `c`: Prompt for confirmation on each change.
 
-// TODO: Replace all instances of `count` with `clicks`.
+// TODO: Only replace instances of `unique` with `common` inside the component.
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  const handleClick = () => setCount(count + 1);
-
-  const message = `Hi, ${count}!`;
-
   return (
     <div>
-      <h1>This is the new content.</h1>
-      <button onClick={handleClick}>{`Count: ${count}`}</button>
+      <p>unique</p>
+      <p>unique</p>
     </div>
   );
 }
@@ -669,6 +675,8 @@ function App() {
 // You will make mistakes — this is okay! If you use the wrong command or mess up,
 // stop, undo (`u`), and try again. Try moving slower and first and thinking carefully
 // about the sequence of commands you'll use before you start typing. Enjoy!
+
+// Cheat sheet: https://github.com/leerob/vim-for-react-devs
 
 // NOTE: ✦ Recommended Neovim Plugins
 
