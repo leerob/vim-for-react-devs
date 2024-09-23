@@ -110,10 +110,11 @@ export default function Page() {
 
         <div>
           <a
-            href="/course.tsx"
+            target="_blank"
+            href="https://github.com/leerob/vim-for-react-devs"
             className="inline-block bg-[#7aa2f7] text-[#1a1b26] font-medium px-4 py-1 rounded hover:bg-[#2ac3de] transition-colors duration-300"
           >
-            Download Course File
+            Start Course
           </a>
         </div>
       </div>
