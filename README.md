@@ -43,7 +43,7 @@ View the completed [course file](./public/course.tsx).
 - `y`: Yank (copy)
 - `v`: Visual selection
 
-### Modifiers
+### Motions
 
 - `i`: Inside
 - `a`: Around
