@@ -36,8 +36,8 @@ Before starting this course, you should have Neovim installed and configured:
 
 I recommend using Kickstart to quickly get started with a productive Neovim setup.
 Kickstart is not a Neovim distribution (like Lazyvim) where everything is bundled.
-Instead, it's starting point for building your own config, with all of the best
-defaults in the ecosystem. Think it a Neovim distro like Create React App (CRA),
+Instead, it's a starting point for building your own config, with all of the best
+defaults in the ecosystem. Think of a Neovim distro like Create React App (CRA),
 and Kickstart like ejecting from CRA, if that helps.
 
 NOTE: Introduction to Vim
@@ -99,7 +99,7 @@ You can navigate in normal mode with left (`h`), down (`j`), up (`k`), and right
 It's okay (and expected) if your right pointer finger rests on `j`.
 Don't worry if Vim movements feel strange at first. They take time to get used to.
 If you still occassionally use your arrow keys or mouse, that's okay — don't put
-too much pressure on yourself to have it perfect at the start. You'll get there!
+too much pressure on yourself to have it perfect at the start.
 
 ## Word Movements
 
@@ -289,7 +289,13 @@ function App() {
 }
 
 // Expected result:
-// <p>World</p>
+// function App() {
+//   return (
+//     <div>
+//       <p>World</p>
+//     </div>
+//   );
+// }
 
 // Let's add another paragraph below.
 
@@ -309,8 +315,14 @@ function App() {
 }
 
 // Expected result:
-// <p>World</p>
-// <p>Welcome to the Vim course.</p>
+// function App() {
+//   return (
+//     <div>
+//       <p>World</p>
+//       <p>Welcome to the Vim course.</p>
+//     </div>
+//   );
+// }
 
 // --- End of Basic Motions Lesson ---
 
@@ -400,14 +412,14 @@ function App() {
 // 1. Place your cursor at the start of the line with `<button>`.
 // 2. Press `ci{` (change inside curly braces) to delete the content inside `{}` and enter insert mode.
 //    - This will cut the content and save it to the clipboard.
-// 4. Type `handleClick` and press `Esc`.
+// 4. Type `handleClick` and press `Esc` to exit insert mode.
 
 // Now, define the `handleClick` function and paste the cut content.
 
 // Steps:
 // 1. Navigate to where you want to insert the new function (e.g., after the state declaration).
 // 2. Press `o` to create a new line and enter insert mode.
-// 3. Type `const handleClick = ` and press `Esc`.
+// 3. Type `const handleClick = ` and press `Esc` to exit insert mode.
 // 4. Press `p` to paste the previously cut content.
 //    - The pasted content should be `() => setName('Lee')`.
 
@@ -471,14 +483,14 @@ function App() {
 
 // --- End of Refactoring Lesson ---
 
-// NOTE: ✦ Lesson: Visual Mode and Text Objects
+// NOTE: ✦ Lesson: Text Objects
 
 // Let's practice using text objects to manipulate text inside quotes.
 
 // Steps:
 // 1. Place your cursor anywhere on the line with `'Click Me'` before the string.
 // 2. Press `ci'` (change inside quotes) to delete the content inside the quotes and enter insert mode.
-// 3. Type `Increment` and press `Esc`.
+// 3. Type`Increment` and press `Esc` to exit insert mode.
 
 // TODO: Change the text inside the quotes of `'Click Me'` to `'Update Name'`.
 
@@ -508,7 +520,7 @@ function App() {
 // Steps:
 // 1. Place your cursor anywhere on the line with `{'Update Name'}`.
 // 2. Press `caq` to delete the string and enter insert mode.
-// 3. Type `Name: ${name}` and press `Esc`.
+// 3. Type `Name: ${name}` and press `Esc` to exit insert mode.
 
 // TODO: Modify the button text to be a string template literal.
 
@@ -528,7 +540,9 @@ function App() {
 }
 
 // Expected result:
-// {`Name: ${name}`}
+// <button onClick={handleClick}>{`Name: ${name}`}</button>
+
+// --- End of Text Objects Lesson ---
 
 // NOTE: ✦ Lesson: More Refactoring
 
@@ -537,7 +551,7 @@ function App() {
 // Steps:
 // 1. Navigate anywhere inside of the `<div>` tag in the return statement.
 // 2. Press `cit` (change inside tag) to delete all children of `<div>` and enter insert mode.
-// 3. Type `<h1>This is the new content.</h1>` and press `Esc`.
+// 3. Type `<h1>This is the new content.</h1>` and press `Esc` to exit insert mode.
 
 // TODO: Replace the contents inside the `<div>` tag with `<h1>This is the new content.</h1>`.
 
@@ -585,6 +599,8 @@ function Component({ foo: 'bar' }) {
   // ...
 }
 
+// --- End of More Refactoring Lesson ---
+
 // NOTE: ✦ Lesson: Deleting Lines and Repeating Commands
 
 // Steps:
@@ -621,7 +637,7 @@ function App() {
 // Steps:
 // 1. Place your cursor on the `<div>` line.
 // 2. Press `S` (capital S) to delete the line and enter insert mode at the start.
-// 3. Type `<section>`, fill the tag with "New", and press `Esc`.
+// 3. Type `<section>`, fill the tag with "New", and press `Esc` to exit insert mode.
 // Reminder, you could also do `cit` if you wanted to keep the `div`, but just replace the content.
 
 // This is more efficient than doing `dd` followed by `o`.
@@ -640,6 +656,8 @@ function App() {
 //     <section>New</section>
 //   );
 // }
+
+// --- End of Deleting Lines Lesson ---
 
 // NOTE: ✦ Lesson: Find and Replace
 
@@ -672,6 +690,8 @@ function App() {
 
 // Then, hit `u` to undo these changes. 
 
+// --- End of Find and Replace Lesson ---
+
 // NOTE: ✦ Lesson: Visual Mode 
 
 // It's helpful to learn different ways to visually select text. Once text
@@ -703,6 +723,8 @@ function App() {
 // When you have content selected, you can also use `>` to indent to the right,
 // and `<` to shift content back left.
 
+// --- End of Course ---
+
 // NOTE: Congratulations! You've completed the course. 
 
 // Now, to make this stick, start building using Vim and reference the cheat sheet.
@@ -724,7 +746,7 @@ function App() {
 // Other Recommended Plugins
 // - neo-tree (Press `\` to toggle file system GUI, similar to VSCode)
 //   - This is in the Kickstart, but you need to uncomment it
-// - lazygit (easy GUI for git commnads)
+// - lazygit (easy GUI for git commands)
 //   - macOS: brew install lazygit
 // - lazygit.nvim (open lazygit directly from Neovim with <leader>lg)
 //   - <leader> defaults to `space` with Quickstart
