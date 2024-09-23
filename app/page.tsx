@@ -34,18 +34,18 @@ export default function Page() {
         </h1>
 
         <p className="mb-5">
-          Vim has been around for over 30 years, and vi (which vim extends)
+          Vim has been around for over 30 years, and vi (which Vim extends)
           almost 50 years.
         </p>
 
         <p className="mb-5">
           So why does it feel like everyone is talking about Vim right now?
-          There’s been a Vim renaissance lately from the popularity of neovim
+          There’s been a Vim renaissance lately from the popularity of Neovim
           and its growing community.
         </p>
 
         <p className="mb-5">
-          Yet, somehow, I had never tried out vim (or neovim). I had been using
+          Yet, somehow, I had never tried out Vim (or Neovim). I had been using
           VS Code for the past six years, and honestly, hadn’t spent much time
           exploring other options.
         </p>
@@ -65,27 +65,27 @@ export default function Page() {
         </p>
 
         <p className="mb-5">
-          I’ve spent the past month learning vim motions, making neovim my
+          I’ve spent the past month learning Vim motions, making Neovim my
           default editor, and I believe it’s one of the better options for web
           developers right now. Everything I love about VS Code I’m able to get
-          with neovim, including fantastic options for git, time-saving
+          with Neovim, including fantastic options for git, time-saving
           shortcuts for common web dev actions, and even AI tools.
         </p>
 
         <p className="mb-5">
           As I learned Vim motions, I applied them to a React codebase to see
           what patterns would work well. This mini course takes those patterns
-          and tips and is designed to get you up to speed on the vim motions you
+          and tips and is designed to get you up to speed on the Vim motions you
           need to know. I’ve also included a cheat sheet of the most common
           commands needed (and how to think about them as a vocabulary, making
           them easier to utilize).
         </p>
 
         <p className="mb-5">
-          This course will not teach you every possible Vim motion. Instead, it
-          will focus on the commands I've found to be most helpful when working
-          with React and JavaScript. However, they apply more generally outside
-          React. Are you ready?
+          This free course will not teach you every possible Vim motion.
+          Instead, it will focus on the commands I've found to be most helpful
+          when working with React and JavaScript. However, they apply more
+          generally outside React. Are you ready?
         </p>
 
         <div className="mb-5">
