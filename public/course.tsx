@@ -795,6 +795,6 @@ function App() {
 // NOTE: Additional Learning Resources
 
 // - Vim Tutor (run `:Tutor` inside Neovim)
-// - Understand Quickstart: https://www.youtube.com/watch?v=m8C0Cq9Uv9o
+// - Understand Kickstart: https://www.youtube.com/watch?v=m8C0Cq9Uv9o
 // - Understand Neovim Configs: https://www.youtube.com/playlist?list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn
 
