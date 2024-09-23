@@ -669,6 +669,37 @@ function App() {
 
 // Then, hit `u` to undo these changes. 
 
+// NOTE: ✦ Lesson: Visual Mode 
+
+// It's helpful to learn different ways to visually select text. Once text
+// is selected, you can then copy it (yank `y`), delete it (`d`), and more.
+
+// Steps:
+// 1. Place your cursor on the `return` line.
+// 2. Type `vi(` (or `vab`) to select all content inside parenthesis. 
+// 3. You currently have the exact text selected (try `c` and see where you cursor lands)
+// 4. `Esc`, undo (`u`) the last change, and re-select with `vi(`.
+// 5. Type `va(` to select all content around the parenthesis.
+// 6. Type 'V' to change to line selection. Now `return` is also selected.
+// 7. Type `d` to delete and cut the entire `return` statement.
+
+// TODO: Try selecting and modifying the text below. 
+
+function App() {
+  return (
+    <div>
+      <p>Select Me</p>
+    </div>
+  );
+}
+
+// Expected result:
+// function App() {
+// }
+
+// When you have content selected, you can also use `>` to indent to the right,
+// and `<` to shift content back left.
+
 // NOTE: Congratulations! You've completed the course. 
 
 // Now, to make this stick, start building using Vim and reference the cheat sheet.
@@ -705,6 +736,11 @@ function App() {
 // - inc-rename (rename all instances of a variable in the file)
 //   - With a keymap, this can be faster than :%s/
 //   - https://github.com/smjonas/inc-rename.nvim
+// - mini.comment (`gc` to comment selection, `gcc` to comment line)
+//   - https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-comment.md
+//   - Paired with https://github.com/JoosepAlviste/nvim-ts-context-commentstring/wiki/Integrations#minicomment
+// - mini.move (select blocks of text and move them up/down with `j`/`k`)
+//   - https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-move.md 
 
 // Additional Learning Resources
 // - Vim Tutor (run `:Tutor` inside Neovim)
