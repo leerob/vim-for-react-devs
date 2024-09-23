@@ -96,7 +96,10 @@ You can navigate in normal mode with left (`h`), down (`j`), up (`k`), and right
       ↓
       j
 
-If your right hand naturally rests with your pointer finger on `j`, that's okay and expected!
+It's okay (and expected) if your right pointer finger rests on `j`.
+Don't worry if Vim movements feel strange at first. They take time to get used to.
+If you still occassionally use your arrow keys or mouse, that's okay — don't put
+too much pressure on yourself to have it perfect at the start. You'll get there!
 
 ## Word Movements
 
@@ -711,7 +714,6 @@ function App() {
 
 // NOTE: ✦ Recommended Neovim Plugins
 
-// If you've made it this far, why not try to make Neovim your default editor?
 // Here are the plugins that I recommend for React and TypeScript development:
 
 // Included in the Neovim Kickstart:
@@ -742,7 +744,34 @@ function App() {
 // - mini.move (select blocks of text and move them up/down with `j`/`k`)
 //   - https://github.com/echasnovski/mini.nvim/blob/main/readmes/mini-move.md 
 
-// Additional Learning Resources
+// NOTE: ✦ Neovim > VS Code 
+
+// If you've made it this far, why not try to make Neovim your default editor?
+// You might be wondering, can I do everything in Neovim that I could in VS Code?
+//
+// - Jumping into function definitions (e.g. read the source for `useState`) — yes!
+//   - `gd` allows you to "Go To Definition"
+// - Fuzzy find search for filenames (e.g. search `page` for `app/page.tsx`) — yes!
+//   - Kickstart includes Telescope for this (this is also why we installed `fzf` and `ripgrep`)
+//   - <leader>sf – Search Files (I remapped to <D-p>, i.e. Cmd+P, to match VS Code)
+//   - <leader>sg - Search across directory
+// - Quickly navigate to errors — yes!
+//   - Neovim calls these errors "diagnostics"
+//   - Again, Telescope makes this _really_ easy
+//   - <leader>sd - "Search Diagnostics"
+//   - While in a file, you can move between diagnostics with `[d` and `]d`
+//   - This is helpful to quick move through TypeScript errors, for example
+// - Extensions — yes!
+//   - Many of the extensions you love in VS Code are "Language Server Protocol" integrations
+//   - Neovim can integrate with any LSP you need, e.g. TypeScript, Tailwind CSS, and more
+// - AI Workflows — yes!
+//   - Check out the avante.nvim plugin above
+// - Navigate forward and backward between files — yes!
+//   - `Ctrl + o`: Back
+//   - `Ctrl + i`: Forward
+
+// NOTE: Additional Learning Resources
+
 // - Vim Tutor (run `:Tutor` inside Neovim)
 // - Understand Quickstart: https://www.youtube.com/watch?v=m8C0Cq9Uv9o
 // - Understand Neovim Configs: https://www.youtube.com/playlist?list=PLsz00TDipIffreIaUNk64KxTIkQaGguqn
