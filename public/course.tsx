@@ -490,7 +490,7 @@ function App() {
 // Steps:
 // 1. Place your cursor anywhere on the line with `'Click Me'` before the string.
 // 2. Press `ci'` (change inside quotes) to delete the content inside the quotes and enter insert mode.
-// 3. Type`Increment` and press `Esc` to exit insert mode.
+// 3. Type`Update Name` and press `Esc` to exit insert mode.
 
 // TODO: Change the text inside the quotes of `'Click Me'` to `'Update Name'`.
 
@@ -510,7 +510,7 @@ function App() {
 }
 
 // Expected result:
-// {'Increment'}
+// {'Update Name'}
 
 // Now, let's try changing from `'` to a string template, using `caq`.
 // "Change around quotes" is even better than a specific character, as it
