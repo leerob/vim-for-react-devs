@@ -463,7 +463,7 @@ function App() {
 // 4. You could then `cw` to change just `setName`, or even `cf)` (change until character `)`).
 // 5. Let's change that `onClick` to `console.log('clicked')`.
 
-// TODO: Try `fc` and then `cf)` motions at the start of the `<button>` line.
+// TODO: Try `fs` and then `cf)` motions at the start of the `<button>` line.
 
 function App() {
   const [name, setName] = useState();
