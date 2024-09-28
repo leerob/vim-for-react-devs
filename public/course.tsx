@@ -729,7 +729,7 @@ function App() {
 
 // Now, to make this stick, start building using Vim and reference the cheat sheet.
 // You will make mistakes — this is okay! If you use the wrong command or mess up,
-// stop, undo (`u`), and try again. Try moving slower and first and thinking carefully
+// stop, undo (`u`), and try again. Try moving slower and think carefully
 // about the sequence of commands you'll use before you start typing. Enjoy!
 
 // Cheat sheet: https://github.com/leerob/vim-for-react-devs
