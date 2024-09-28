@@ -27,7 +27,9 @@ NOTE: Prerequisites
 
 Before starting this course, you should have Neovim installed and configured:
 
-- 1) macOS: `brew install nvim fzf ripgrep`
+- 1) Install Neovim and its dependencies
+  - macOS: `brew install nvim fzf ripgrep`
+  - Windows: `choco install -y neovim git ripgrep wget fd unzip gzip mingw make`
 - 2) Follow this quickstart: https://github.com/nvim-lua/kickstart.nvim
   - Don't feel you need to understand the entire Lua file
   - At the completion of the course, we'll talk about plugins and configuration
@@ -748,6 +750,7 @@ function App() {
 //   - This is in the Kickstart, but you need to uncomment it
 // - lazygit (easy GUI for git commands)
 //   - macOS: brew install lazygit
+//   - Windows: choco install -y lazygit
 // - lazygit.nvim (open lazygit directly from Neovim with <leader>lg)
 //   - <leader> defaults to `space` with Quickstart
 //   - https://github.com/kdheepak/lazygit.nvim
