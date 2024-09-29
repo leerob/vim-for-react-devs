@@ -65,7 +65,8 @@ View the completed [course file](./public/course.tsx).
 - `yy`: Copy Entire Line
 - `y$`: Copy To End Of Line
 - `diq`: Delete Inside Quotes
-- `ca{`, `ci(`: Change Around Braces
+- `ca{`: Change Around Braces
+- `ci(`: Change Inside Parenthesis
 - `yap`: Yank Paragraph
 - `dab`: Delete Around Brackets
 - `yiw`: Yank Inside Word
