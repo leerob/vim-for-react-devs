@@ -642,7 +642,7 @@ function App() {
 // 3. Type `<section>`, fill the tag with "New", and press `Esc` to exit insert mode.
 // Reminder, you could also do `cit` if you wanted to keep the `div`, but just replace the content.
 
-// This is more efficient than doing `dd` followed by `o`.
+// This is more efficient than doing `dd` followed by `O`.
 
 // TODO: Replace the `<div>` tag with `<section>`.
 
