@@ -98,7 +98,7 @@ You can navigate in normal mode with left (`h`), down (`j`), up (`k`), and right
       ↓
       j
 
-It's okay (and expected) if your right pointer finger rests on `j`.
+It's okay (and expected) if your right pointer finger rests on `h`.
 Don't worry if Vim movements feel strange at first. They take time to get used to.
 If you still occassionally use your arrow keys or mouse, that's okay — don't put
 too much pressure on yourself to have it perfect at the start.
